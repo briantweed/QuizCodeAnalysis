@@ -1,0 +1,42 @@
+
+.results {
+    padding: 20px 0 30px;
+}
+
+.grid {
+    width: 96%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.grid > .box {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    height: 35px;
+    border: 1px solid rgba(100,100,100,0.5);
+    overflow: hidden;
+}
+
+.grid > .fizz {
+    background: #9CD9FF;
+}
+
+.grid > .buzz {
+    background: #9CFF9E;
+}
+
+.grid > .fizzbuzz {
+    background: #F2C474;
+}
+
+.prime {
+    background: #918DDF;
+}
+
+.line-number {
+    color: #00851D;
+}
