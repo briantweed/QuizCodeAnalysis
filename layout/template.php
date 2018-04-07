@@ -8,9 +8,9 @@
 <?php
             if(isset($this->function_results))
             {
-                if(file_exists($this->function_name.".php"))
+                if(file_exists('layout/'.$this->function_name.".php"))
                 {
-                    require($this->function_name.".php");
+                    require('layout/'.$this->function_name.".php");
                 }
                 else 
                 {

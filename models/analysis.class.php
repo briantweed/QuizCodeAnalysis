@@ -85,7 +85,7 @@ class Analysis
 
     public function display() 
     {
-        require('template.php');
+        require('layout/template.php');
     }
 
 

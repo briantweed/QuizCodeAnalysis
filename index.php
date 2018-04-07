@@ -1,8 +1,8 @@
 <?php
 
-// ini_set('display_errors', 1);
-// ini_set('display_startup_errors', 1);
-// error_reporting(E_ALL);
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
 /**
  * 
@@ -12,7 +12,7 @@
  * 
  */
 
-include_once 'analysis.class.php';
+include_once 'models/analysis.class.php';
 include_once 'code.php';
 
 $num = 1;
@@ -53,4 +53,4 @@ foreach($user_functions as $user_function)
     $num++;
 }
 
-include 'display.php';
+include 'layout/display.php';
