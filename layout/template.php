@@ -1,6 +1,6 @@
 <section class="results">
 
-    <h3><?php echo $this->function_name ?></h3>
+    <h3><?php echo $this->display_name ?></h3>
 
     <div class="row">
 
@@ -8,9 +8,9 @@
 <?php
             if(isset($this->function_results))
             {
-                if(file_exists('layout/'.$this->function_name.".php"))
+                if(file_exists('layout/'.$this->display_name.".php"))
                 {
-                    require('layout/'.$this->function_name.".php");
+                    require('layout/'.$this->display_name.".php");
                 }
                 else 
                 {

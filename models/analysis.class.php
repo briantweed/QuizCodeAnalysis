@@ -13,9 +13,10 @@ class Analysis
     const NUMBER_OF_TESTS = 2000;
 
 
-    public function __construct($function_name, $function_parameters, $number_of_tests = self::NUMBER_OF_TESTS)
+    public function __construct($function_name, $display_name, $function_parameters, $number_of_tests = self::NUMBER_OF_TESTS)
     {
         Analysis::setFunctionName($function_name);
+        Analysis::setDisplayName($display_name);
         Analysis::setNumberOfTests($number_of_tests);
         Analysis::setFunctionParameters($function_parameters);
         Analysis::setReflection();
@@ -25,6 +26,12 @@ class Analysis
     private function setFunctionName(string $function_name)
     {
         $this->function_name = $function_name;
+    }
+
+
+    private function setDisplayName(string $display_name)
+    {
+        $this->display_name = $display_name;
     }
 
 

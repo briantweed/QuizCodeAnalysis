@@ -47,7 +47,7 @@ foreach($user_functions as $user_function)
         }
     }
 
-    ${'test'.$num} = new Analysis($user_function, $params);
+    ${'test'.$num} = new Analysis($user_function, $reflection->getShortName(), $params);
     ${'test'.$num}->analyse();
 
     $user_results[] = ${'test'.$num};
