@@ -35,8 +35,12 @@ function fizzbuzz(int $finish):array
             $results[] = $x;
             continue;
         }
-        if($isFizz) $output .= 'fizz';
-        if($isBuzz) $output .= 'buzz';
+        if($isFizz) {
+            $output .= 'fizz';
+        }
+        if($isBuzz) {
+            $output .= 'buzz';
+        }
         $results[] = $output;
     }
     return $results;
