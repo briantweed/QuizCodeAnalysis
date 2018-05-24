@@ -8,12 +8,9 @@ function prime(int $finish):array
     $range  = range($number, $finish);
     $primes = array_combine($range, $range);
 
-    while($number*$number<=$finish)
-    {
-        for($x=$number; $x<=$finish; $x+=$number)
-        {
-            if($x!==$number) 
-            {
+    while($number*$number<=$finish) {
+        for($x=$number; $x<=$finish; $x+=$number) {
+            if($x!==$number) {
                 unset($primes[$x]);
             }
         }
@@ -25,13 +22,11 @@ function prime(int $finish):array
 function fizzbuzz(int $finish):array
 {
     $results = [];
-    for($x=1; $x<=$finish; $x++)
-    {
+    for($x=1; $x<=$finish; $x++) {
         $output = '';
         $isFizz = (0 === $x%3);
         $isBuzz = (0 === $x%5);
-        if(!$isFizz && !$isBuzz) 
-        {
+        if(!$isFizz && !$isBuzz) {
             $results[] = $x;
             continue;
         }
