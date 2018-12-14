@@ -15,7 +15,9 @@ error_reporting(E_ALL);
 include_once 'models/analysis.class.php';
 
 $files = new FilesystemIterator('code', FilesystemIterator::SKIP_DOTS);
-foreach($files as $file) include_once $file;
+foreach($files as $file) {
+    include_once $file;
+}
 
 $num = 1;
 $user_results = [];
